@@ -1,0 +1,24 @@
+// Variáveis //
+
+// NOTA: a criação de variáveis pelo SASS, ao que parece, diferente de usar-se ROOT para declarar no CSS, usa-se o CIFRÃO ($) para que as variáveis sejam declaradas, assim: //
+
+
+// Cores //
+$roxo-escuro: #0C0421;
+$roxo-vibrante: #4E75FF;
+$roxo-calmante: #85A0FF;
+$lilas: #CAD4FA;
+$verde-calmante: #E8F5C8;
+$gradiente-primario: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+$gradiente-secundario: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+
+// Fontes //
+$fonte-titulos: 'Krona One', sans-serif;
+$fonte-textos: 'Montserrat', sans-serif;
+
+// ***NOTA: Este arquivo é uma PARTIAL, ou seja, como o nome sugere, uma PARTE dividida do arquivo de estilos utilizados no projeto. O nome que se dá à divisão de arquivos é a *MODULARIZAÇÃO*. Dentro da pasta styles criou-se a pasta ABSTRACT, com o arquivo onde se colocará as VARIÁVEIS do projeto. NOTA-SE que, na criação do arquivo, há um *UNDERLINE* e, quando o arquivo é "chamado" no arquivo principal, este mesmo UNDERLINE não existe. //
+
+// ** ESTE UNDERLINE SERVE PARA INFORMAR QUE, QUANDO ESTAMOS MODULARIZANDO O ARQUIVO, QUE ESTE ARQUIVO EM PARTICULAR É UMA PARTIAL ** //
+
+// ** IMPORTANTE: QUANDO UTILIZAMOS PARTIALS E ESSAS PARTIALS POSSUEM VARIÁVEIS, DEVE-SE TAMBÉM INFORMAR, NA VARIÁVEL QUE ESTÁ SENDO COLOCADA NA PROPRIEDADE, O NOME DO ARQUIVO (PARTIAL) EM QUE SE ENCONTRA A VARIÁVEL, COLOCANDO ANTES DA VARIÁVEL EM SI, SEGUIDO POR UM PONTO (.) EXEMPLO: ** //
+// background: variaveis.$gradiente-primario //

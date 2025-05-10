@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import url('header.css');
+
+@import url('nav.css');
+
+@import url('main.css');
+
+@import url('footer.css');
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+:root {
+    /* CORES DE FUNDO */
+    --cor-body: #1D232A;
+    --cor-header: #1D232A;
+    --cor-header-mobile: #15191C;
+    --cor-menu-lateral: #15191C;
+    --cor-cartao: #2C343A;
+    --cor-links: #0480DC;
+    --cor-botao: #0480DC;
+
+    /* CORES DE TEXTO */
+    --cor-texto-padrao: #FFFFFF;
+    --cor-texto-alternativo: #95999C;
+
+    /* FONTES */
+    --fonte-padrao: 'Open Sans';
+
+    /* SOMBRAS */
+    --sombra: 0px 4px 4px rgba(0, 0, 0, 0.16)
+}
+
+body {
+    background-color: var(--cor-body);
+    font-family: var(--fonte-padrao), 'icones', 'sans-serif';
+    color: var(--cor-texto-padrao);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}

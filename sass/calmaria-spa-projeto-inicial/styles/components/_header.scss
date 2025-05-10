@@ -1,0 +1,125 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+header {
+    background: variaveis.$gradiente-primario;
+    padding: 2rem;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+        .linha {
+            border-top: 1px solid black;
+            width: 80%;
+        }
+
+        ul {
+            display: flex;
+            gap: 2rem;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    @include mixins.ff-fs-cl(variaveis.$fonte-textos, 22px, variaveis.$roxo-escuro);
+                    font-weight: 500;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 0 7rem;
+
+        .textos-home {
+            h1 {
+                font-size: 42px;
+                font-family: $fonte-titulos;
+                color: $roxo-escuro;
+
+                span {
+                    color: $roxo-vibrante;
+                }
+            }
+
+            button {
+                font-family: $fonte-titulos;
+                background-color: $roxo-vibrante;
+                color: white;
+                padding: 1.5rem 3rem;
+                border: none;
+                border-radius: 30px;
+                font-size: 18px;
+            }
+        }
+
+        .img-home {
+
+            img {
+                width: 100%;
+            }
+        }
+    } */
+    
+    #home {
+        max-width: 1040px;
+
+        @include mixins.margem-central(80%);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .textos-home {
+            max-width: 464px;
+
+            h1 {
+                font-size: 42px;
+                color: variaveis.$roxo-escuro;
+                font-family: variaveis.$fonte-titulos;
+                margin-bottom: 2rem;
+
+                span {
+                    color: variaveis.$roxo-vibrante;
+                }
+            }
+
+            button {
+                font-family: variaveis.$fonte-textos;
+                color: white;
+                background-color: variaveis.$lilas;
+                border: none;
+                font-size: 22px;
+                font-weight: 600;
+                padding: 1.25rem 4rem;
+                border-radius: 42px;
+
+                &:hover {
+                    background: variaveis.$roxo-vibrante;
+                    cursor: pointer;
+                    transition: .7s;
+                }
+            }
+        }
+
+        .img-home {
+            max-width: 474px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

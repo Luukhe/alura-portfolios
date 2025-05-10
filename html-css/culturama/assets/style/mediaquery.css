@@ -1,0 +1,303 @@
+@media (min-width:720px) {
+
+    /* -------------------------------------- HEADER --------------------------------------------- */
+
+    header {
+        height: 220px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    header nav {
+        grid-column: 2/4;
+        align-self: center;
+    }
+
+    header nav ul {
+        justify-content: space-around;
+        column-gap: 3em;
+    }
+
+    header h1 {
+        grid-row: 1/3;
+    }
+
+    header input[type="search"] {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* ------------------------------------------- MAIN ------------------------------------------- */
+
+    .banners {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .banners img:nth-child(1) {
+        grid-row: 1/3;
+        grid-column: 1/2;
+        height: 100%;
+    }
+
+    .banners img:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .banners img:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+
+    .categorias ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.25em;
+    }
+
+    .categorias ul li {
+        margin-bottom: .65em;
+    }
+
+    .categorias ul li:nth-child(1), .categorias ul li:nth-child(2), .categorias ul li:nth-child(3), .categorias ul li:nth-child(4) {
+        grid-column: 1;
+    }
+
+    .categorias ul li:nth-child(5), .categorias ul li:nth-child(6), .categorias ul li:nth-child(7), .categorias ul li:nth-child(8) {
+        grid-column: 2;
+        
+    }
+
+    .categorias ul li:nth-child(5) {
+        grid-row: 1;
+    }
+
+    .categorias ul li:nth-child(6) {
+        grid-row: 2;
+    }
+
+    .categorias ul li:nth-child(7) {
+        grid-row: 3;
+    }
+
+    .categorias ul li:nth-child(8) {
+        grid-row: 4;
+    }
+
+    .destaques-img-360 {
+        display: none;
+    }
+
+    .destaques-img-720 {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .proximos-eventos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+    }
+
+    .proximos-eventos h3 {
+        grid-column: 1/3;
+    }
+
+    .proximos-eventos-card {
+        margin: 0;
+    }
+
+    .proximos-eventos-card-info {
+        padding: 1em 1.25em;
+    }
+
+    .proximos-eventos-container-botao {
+        grid-column: 2;
+        justify-self: end;
+    }
+    
+    .agenda {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em
+    }
+
+    .agenda h3 {
+        grid-column: 1/3;
+        margin: 0;
+    }
+
+    .agenda-card {
+        margin: 0;
+    }
+
+    .agenda-container-botao {
+        grid-column: 2;
+        justify-self: end;
+    }
+
+
+    /* -------------------------------------------- FOOTER ----------------------------------------- */
+
+
+    footer {
+        padding: 1.75em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer ul {
+        width: 21%;
+    }
+
+   /* footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   }
+
+   .rodape-logo {
+    grid-column: 4;
+   } */
+
+}
+
+@media (min-width: 1440px) {
+
+    /* ---------------------------------------- HEADER ------------------------------------------- */
+
+    header {
+        height: auto;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        column-gap: 5.5em;
+        padding: .35em 5.5em;
+    }
+
+    header h1 {
+        grid-row: 1/4;
+    }
+
+    header nav {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    header input[type="search"] {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    header nav ul li {
+        font-size: 20px;
+    }
+
+    /* ------------------------------------------- MAIN ----------------------------------------- */
+
+    main {
+        padding: 0 5.5em;
+    }
+
+    .banners img:nth-child(4) {
+        height: 100%;
+    }
+
+    .categorias ul {
+        row-gap: 1em;
+    }
+    
+    .categorias ul li {
+        margin: 0;
+        display: grid;
+        align-items: center;
+    }
+
+    .categorias {
+        display: none;
+        grid-template-columns: auto;
+    }
+
+    main > .categorias-destaques-1440 {
+        display: grid;
+        row-gap: 2em;
+    }
+
+    .categorias-destaques-1440 ul {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .destaques-container-botoes {
+        grid-row: 1;
+        grid-column: 3;
+        margin: 0;
+    }
+
+    main > .categorias-destaques-1440 .destaques-img-720 {
+        grid-row: 2/5;
+        grid-column: 3;
+    }
+
+   .proximos-eventos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+   .proximos-eventos h3 {
+        grid-column: 1/5;
+    }
+
+   .proximos-eventos-container-botao {
+        grid-column: 4;
+    }
+
+   .proximos-eventos-card-1440 {
+        display: block;
+    }
+
+   .agenda {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+   .agenda h3 {
+        grid-column: 1/4;
+    }
+
+   .agenda-card-1440 {
+        display: grid;
+    }
+
+   .agenda-container-botao {
+        grid-column: 3;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 3em 5.5em;
+        gap: 2em;
+    }
+
+    footer ul {
+        width: auto;
+    }
+    
+    footer ul li {
+        font-size: 16px;
+        margin-bottom: 1.25em;
+    }
+
+    .rodape-logo-360 {
+        display: none;
+    }
+
+    .rodape-logo-1440 {
+        display: inline-block;
+    }
+
+    .rodape-logo p {
+        font-size: 16px;
+    }
+   
+}
