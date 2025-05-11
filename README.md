@@ -1,4 +1,4 @@
-# Repositório destinado a projetos de portfólio e exercícios feitos no Alura #
+# Repositório destinado a projetos de portfólio de HTML5 e CSS3, SASS e Tailwind feitos no Alura #
 
 ## Links para os portfólios ##
 
